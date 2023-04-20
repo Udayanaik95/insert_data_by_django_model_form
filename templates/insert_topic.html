@@ -1,0 +1,18 @@
+<html>
+<head>
+   <title>Topic Model Form</title>
+</head>
+<body>
+    <center>
+        <h1>Topic Model Data</h1>
+
+        <form method="POST">
+            {% csrf_token %}
+
+                {{TFO.as_p}}
+
+            <input type="submit" value="Insert_Topic">
+        </form>
+    </center>
+</body>
+</html>

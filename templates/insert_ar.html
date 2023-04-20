@@ -1,0 +1,18 @@
+<html>
+<head>
+   <title>AccessRecord Model Form</title>
+</head>
+<body>
+    <center>
+        <h1>AccessRecord Model Data</h1>
+
+        <form method="POST">
+            {% csrf_token %}
+
+                {{ARO.as_p}}
+
+            <input type="submit" value="Insert_AccessRecord">
+        </form>
+    </center>
+</body>
+</html>

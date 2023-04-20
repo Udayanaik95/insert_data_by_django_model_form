@@ -1,0 +1,18 @@
+<html>
+<head>
+   <title>Webpage Model Form</title>
+</head>
+<body>
+    <center>
+        <h1>Webpage Model Data</h1>
+
+        <form method="POST">
+            {% csrf_token %}
+
+                {{WPO.as_p}}
+
+            <input type="submit" value="Insert_Webpage">
+        </form>
+    </center>
+</body>
+</html>
